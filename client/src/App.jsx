@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   const [stocks, setStocks] = useState([]);
@@ -102,7 +103,7 @@ function App() {
           <strong>{message}</strong>
         </p>
       )}
-
+<Dashboard />
       <h2>Available Stocks</h2>
 
       <table
